@@ -114,7 +114,12 @@ if __name__ == '__main__':
   
   playlists_list_by_channel_id(client,
     part='snippet,contentDetails',
+                               
+#If you want to reduce the field output to minimum 
 #    fields='nextPageToken,items/snippet/title',
+#If you want consize output 
+    fields='items(contentDetails,etag,id,kind,snippet/title),nextPageToken,pageInfo',
+
 #GoogleDev Channel 
 #    channelId='UC_x5XG1OV2P6uZZ5FSM9Ttw',
 
